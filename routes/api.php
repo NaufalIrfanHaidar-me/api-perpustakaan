@@ -8,3 +8,4 @@ Route::get('/', function(){
     return 'Hello World API !';
 });
 Route::get('/posts', [PostC::class, 'index']);
+Route::get('/posts/{id}', [PostC::class, 'detail']);
