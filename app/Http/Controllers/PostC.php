@@ -11,7 +11,7 @@ class PostC extends Controller
     public function index(){
         $posts = Post::all();
        // return response()->json($posts);
-       //return PostR::collection($posts);
+       return PostR::collection($posts);
     }
 
     public function detail($id){
